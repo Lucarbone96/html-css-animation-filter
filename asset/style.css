@@ -96,6 +96,31 @@
     filter: grayscale(0.8) invert(0.6);
 }
 
+@keyframes dueffetti{
+    0%{
+        margin-top: 30px;
+        width: 500px; 
+    }
+    25%{
+        filter: grayscale(0.8);
+        margin-top: 30px;
+        width: 500px; 
+    }
+    50%{
+        margin-top: 30px;
+        width: 500px;
+    }
+    75%{
+        margin-top: 30px;
+        width: 500px;
+        filter: invert(0.6); 
+    }
+    100%{
+        margin-top: 30px;
+        width: 500px; 
+    }
+}
+
 .ex-8-img{
     margin-top: 30px;
     width: 500px;
@@ -107,8 +132,36 @@
 }
 
 .ex-8-img:hover{
-    filter: brightness(.6) sepia(.5);
+    filter: brightness(0.6) sepia(0.5);
     border-radius: 20px;
+}
+
+@keyframes effettiradius{
+    0%{
+        margin-top: 30px;
+        width: 500px;
+    }
+    25%{
+        margin-top: 30px;
+        width: 500px;
+        filter: brightness(0.6);
+        border-radius: 20px;
+    }
+    50%{
+        margin-top: 30px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    75%{
+        margin-top: 30px;
+        width: 500px;
+        filter: sepia(0.5);
+        border-radius: 20px;
+    }
+    100%{
+        margin-top: 30px;
+        width: 500px;
+    }
 }
 
 .ex-9-img{
@@ -141,6 +194,30 @@
 @keyframes spin{
     0%{
         transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon{
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    border-bottom-color: white;
+    animation-name: semispin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes semispin{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(0);
     }
 }
 
