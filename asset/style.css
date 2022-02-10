@@ -58,22 +58,30 @@
     width: 60px;
     height: 60px;
     background: red;
-    transition: 5s width height, 5s width height;
+    transition: 5s scale, 5s scale;
 }
 
 .ex-5-square:hover{
-    width: 90px;
-    height: 90px;
+    scale: (2);
 }
 
 .ex-5-square:active{
-    width: 30px;
-    height: 30px;
+   scale: (.5);
 }
 
 .ex-6-img{
     margin-top: 30px;
     width: 500px;
+    animation-name: effetto;
+    animation-duration: 5s;
+}
+
+.ex-6-img:hover{
+    filter: grayscale();
+}
+
+.ex-7-img{
+    margin-top: 30px;
 }
 
 
