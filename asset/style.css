@@ -58,22 +58,25 @@
     width: 60px;
     height: 60px;
     background: red;
-    transition: 5s scale, 5s scale;
+    transition: 3s width height, 3s width height;
 }
 
 .ex-5-square:hover{
-    scale: (2);
+    width: 90px;
+    height: 90px;
 }
 
 .ex-5-square:active{
-   scale: (.5);
+   width: 30px;
+   height: 30px;
 }
 
 .ex-6-img{
-    margin-top: 30px;
+    margin-top: 50px;
     width: 500px;
     animation-name: effetto;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .ex-6-img:hover{
@@ -82,7 +85,18 @@
 
 .ex-7-img{
     margin-top: 30px;
+    width: 500px;
+    animation-name: dueffetti;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 3s;
 }
+
+.ex-7-img:hover{
+    filter: grayscale(0.8) invert(0.6)
+}
+
+
 
 
 
