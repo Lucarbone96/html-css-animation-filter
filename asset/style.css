@@ -214,12 +214,25 @@
         transform: rotate(0);
     }
     50%{
-        transform: rotate(315deg);
+        transform: rotate(270deg);
     }
     100%{
         transform: rotate(0);
     }
 }
+
+button{
+    border: 1px solid blue;
+    padding: 5px;
+    margin-top: 30px;
+    width: 100px;
+}
+
+
+
+
+
+
 
 
 
